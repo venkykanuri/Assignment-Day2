@@ -1,8 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+      <style>div {
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+      }</style>
+       </head>
   <body>
-    <input id = "new" type="text" onkeydown="keydown()" onkeyup="keyup()"  /> <!--onkeydown is event -->
+      <p>dont text in this text box you will gwt a alert box</p>
+    <input type="text" onkeydown="keydown()" />
+    <!--onkeydown is event -->
+    <p>--------------------------------------------------------------------------------------------------------------------------------</p>
+   <h3>This is onkeydown and onkeyup event</h3> 
+    <p>
+      Press and hold down a key inside the text field to set a red background
+      color
+    </p>
+    <input
+      type="text"
+      id="new"
+      onkeydown="keydownfunction()"
+      onkeyup="keyupfunction()"
+    />
+    <p>------------------------------------------------------------------------------------------</p>
+    <h3>This is ondblclick event</h3>
+    <p ondblclick="doubleclickfunction()">
+      what is your country?(double click on this question to show your country)
+    </p>
+    <p id="new1"></p>
+    <p>----------------------------------------------------------------------------------------------------------------------------------</p>
+    <h3>This is onmouse event</h3>
+    <p onmousedown="mousebuttonfunction(event)" background:"red">Click this text with one of your mouse buttons to return a number.
+        <p>
+        0 = The left mouse button<br>
+        1 = The middle mouse button<br>
+        2 = The right mouse button
+        </p>
+    </p>
+        <p>---------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <div id = "scroll" onscroll="scrolldownfunction()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore praesentium eos labore cupiditate, est aut commodi ratione repudiandae culpa ullam, vel autem modi vero, inventore adipisci ex. Nam, quas ullam.<br><br>
+            'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+            
+            <p>Scrolled <span id="demo">0</span> times.</p>
+
+            <p>---------------------------------------------------------------------------------------------------------------</p>
+
+
+
 
     <script src="htmldom1.js"></script>
   </body>
